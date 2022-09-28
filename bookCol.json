@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "bookId": "ISBN 10001",
+      "genre": "Fantasy",
+      "title": "Fantasy1",
+      "author": "Jenney wong"
+    },
+    {
+      "bookId": "ISBN 10002",
+      "genre": "Mystery",
+      "title": "Mystery1",
+      "author": "Jeccia Shong"
+    },
+    {
+      "bookId": "ISBN 10003",
+      "genre": "Romance",
+      "title": "Romance1",
+      "author": "Coco Li"
+    },
+    {
+      "bookId": "ISBN 10004",
+      "genre": "Thriller",
+      "title": "Thriller1",
+      "author": "Nini Tian"
+    },
+    {
+      "bookId": "ISBN 10005",
+      "genre": "Fantasy",
+      "title": "fantasy2",
+      "author": "jenney wong"
+    },
+    {
+      "bookId": "ISBN 10006",
+      "genre": "Sci_Fi",
+      "title": "Sci_Fi_1",
+      "author": "Suan Xiang"
+    }
+  ]
+}
