@@ -1,0 +1,67 @@
+{
+  "customers": [
+    {
+      "customerId": "c1007",
+      "firstName": "Mike",
+      "lastName": "Shing",
+      "wishlistitems": [
+        {
+          "bookId": "ISBN 10001",
+          "genre": "Fantasy",
+          "title": "fantasy1",
+          "author": "jenney wong"
+        },
+        {
+          "bookId": "ISBN 10002",
+          "genre": "Mystery",
+          "title": "Mystery1",
+          "author": "Jeccia Shong"
+        }
+      ]
+    },
+    {
+      "customerId": "c1008",
+      "firstName": "Yuna",
+      "lastName": "Ouyang",
+      "wishlistitems": [
+        {
+          "bookId": "ISBN 10003",
+          "genre": "Romance",
+          "title": "Romance1",
+          "author": "Coco Li"
+        },
+        {
+          "bookId": "ISBN 10004",
+          "genre": "Thriller",
+          "title": "Thriller1",
+          "author": "Nini Tian"
+        }
+      ]
+    },
+    {
+      "customerId": "c1009",
+      "firstName": "Yuri",
+      "lastName": "Zhang",
+      "wishlistitems": [
+        {
+          "bookId": "ISBN 10005",
+          "genre": "Fantasy",
+          "title": "fantasy2",
+          "author": "jenney wong"
+        },
+        {
+          "bookId": "ISBN 10006",
+          "genre": "Sci-Fi",
+          "title": "Sci-Fi-1",
+          "author": "Suan Xiang"
+        },
+        {
+          "bookId": "ISBN 10002",
+          "genre": "Mystery",
+          "title": "Mystery1",
+          "author": "Jeccia Shong"
+        }
+      ]
+    }
+  ]
+} 
