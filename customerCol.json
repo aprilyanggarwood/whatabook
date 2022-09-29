@@ -9,7 +9,7 @@
           "bookId": "ISBN 10001",
           "genre": "Fantasy",
           "title": "fantasy1",
-          "author": "jenney wong"
+          "author": "Jenney Wong"
         },
         {
           "bookId": "ISBN 10002",
@@ -47,7 +47,7 @@
           "bookId": "ISBN 10005",
           "genre": "Fantasy",
           "title": "fantasy2",
-          "author": "jenney wong"
+          "author": "Jenney Wong"
         },
         {
           "bookId": "ISBN 10006",
@@ -64,4 +64,4 @@
       ]
     }
   ]
-} 
+}

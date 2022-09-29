@@ -80,7 +80,7 @@ fantasy1 = {
   bookId: "ISBN 10001",
   genre: "Fantasy",
   title: "Fantasy1",
-  author: "Jenney wong",
+  author: "Jenney Wong",
 };
 
 mystery1 = {
@@ -108,7 +108,7 @@ fantasy2 = {
   bookId: "ISBN 10005",
   genre: "Fantasy",
   title: "fantasy2",
-  author: "jenney wong",
+  author: "Jenney Wong",
 };
 
 sci_fi_1 = {
@@ -138,7 +138,7 @@ shing = {
       bookId: "ISBN 10001",
       genre: "Fantasy",
       title: "Fantasy1",
-      author: "Jenney wong",
+      author: "Jenney Wong",
     },
     {
       bookId: "ISBN 10002",
@@ -178,7 +178,7 @@ zhang = {
       bookId: "ISBN 10005",
       genre: "Fantasy",
       title: "fantasy2",
-      author: "jenney wong",
+      author: "Jenney Wong",
     },
     {
       bookId: "ISBN 10006",
@@ -210,7 +210,7 @@ db.books.aggregate([{ $sort: { genre: 1 } }]);
 db.books.aggregate([{ $sort: { author: 1 } }]);
 
 // Display a book by bookId.
-db.books.find({ bookId: "10006" });
+db.books.find({ bookId: "ISBN 10006" });
 
 // Display a wishlist by customerId.
 db.customers.find({ customerId: "c1009" });
