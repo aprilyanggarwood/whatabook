@@ -35,21 +35,24 @@ bookCol = db["books"]
 customerCol = db["customers"]
 
 # Display a list of books. Format the output so it is easy to read.
-books = bookCol.find()
+print("-- Display a list of books --")
+books = bookCol.find({},{"_id":0})
 for book in books:
     pp(book)
 
 print('\n')
 
 # Display a list of customers. Format the output so it is easy to read.
-customers = customerCol.find()
+print("-- Display a list of customers --")
+customers = customerCol.find({},{"_id":0})
 for customer in customers:
     pp(customer)
 
 print('\n')
 
 #Display a list of books by Genre.
-sortGenre = bookCol.find().sort("genre")
+print("-- Display a list of books by genre --")
+sortGenre = bookCol.find({},{"_id":0,"author":0}).sort("genre")
 for genre in sortGenre:
   pp(genre)
 
@@ -57,6 +60,7 @@ print('\n')
 
 # Display a customers wishlist by customerId.
 # Prompt the customer to enter a customerId (c1007, c1008, or c1009) and display the appropriate wishlist.
+print("-- Display a customer's wishlist by customerId --")
 customerId = input("Enter a customer id: ")
 customer = customerCol.find_one({"customerId": customerId},{ "_id": 0, "firstName": 0, "lastName": 0 })
 
