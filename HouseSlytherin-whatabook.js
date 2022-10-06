@@ -212,10 +212,10 @@ db.books.aggregate([{ $sort: { author: 1 } }]);
 // Display a book by bookId.
 db.books.find({ bookId: "ISBN 10006" });
 
-// Query to display a wishlist by customerId.
+// Display a wishlist by customerId.
 db.customers.find({}, {customerId: "c1009", wishlistitems: 1})
 
-// Query to add a book to a customer’s wishlist.
+// Add a book to a customer’s wishlist.
 db.customers.update(
     { customerId: "c1008" },
     {
