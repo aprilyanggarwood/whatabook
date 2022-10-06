@@ -212,5 +212,35 @@ db.books.aggregate([{ $sort: { author: 1 } }]);
 // Display a book by bookId.
 db.books.find({ bookId: "ISBN 10006" });
 
-// Display a wishlist by customerId.
-db.customers.find({ customerId: "c1009" });
+// Query to display a wishlist by customerId.
+db.customers.find({}, {customerId: "c1009", wishlistitems: 1})
+
+// Query to add a book to a customer’s wishlist.
+db.customers.update(
+    { customerId: "c1008" },
+    {
+      $push: {
+        wishlistitems: {
+          bookId: "ISBN 10006",
+          genre: "Sci_Fi",
+          title: "Sci_Fi_1",
+          author: "Jeccia Shong",
+        },
+      },
+    }
+  );
+  
+  // Remove a  book from a customer’s wishlist.
+  db.customers.find({ customerId: "c1008" });
+  db.customers.update(
+    { customerId: "c1008" },
+    {
+      $pull: {
+        wishlistitems: {
+          bookId: "ISBN 10006",
+          genre: "Sci_Fi",
+          title: "Sci_Fi_1",
+          author: "Jeccia Shong",
+        },
+      },
+    }
